@@ -16,15 +16,6 @@ public class Student {
         this.studentName = studentName;
     }
 
-    /*//spring will use this setter method to inject this id
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    //spring will use this setter method to inject this name
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }*/
 
     public void displayStudentInfo()
     {
