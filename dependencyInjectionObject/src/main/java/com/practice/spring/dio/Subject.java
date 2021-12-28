@@ -5,4 +5,8 @@ public class Subject {
     public void english(){
         System.out.println("You are about to learn english..");
     }
+
+    public void mathematics(){
+        System.out.println("You are about to learn Mathematics..");
+    }
 }
