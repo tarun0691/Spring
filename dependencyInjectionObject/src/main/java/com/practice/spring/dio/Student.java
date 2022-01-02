@@ -2,7 +2,7 @@ package com.practice.spring.dio;
 
 public class Student {
 
-    private int id;
+    private Integer id;
     Subject subject;
 
     public void setId(int id) {
@@ -14,9 +14,14 @@ public class Student {
     }
 
     public void subjectToLearn(){
-        if(id == 1)
+        if(id == 1){
+            System.out.println("Student with id : " + id);
             subject.english();
-        else
+        }
+        else if(id == 2){
+            System.out.println("Student with id : " + id);
             subject.mathematics();
+        }
+
     }
 }
