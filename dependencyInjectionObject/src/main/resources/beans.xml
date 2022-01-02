@@ -12,6 +12,7 @@
     </bean>
 
     <bean id = "mathematicsStudent" class = "com.practice.spring.dio.Student">
+        <property name="id" value="2"/>
         <property name="subject" ref="subject"/>
     </bean>
 
