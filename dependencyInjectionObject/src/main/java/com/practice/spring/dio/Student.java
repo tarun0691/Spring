@@ -1,7 +1,5 @@
 package com.practice.spring.dio;
 
-import org.springframework.util.StringUtils;
-
 public class Student {
 
     private Integer id;
