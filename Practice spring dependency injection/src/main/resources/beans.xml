@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="callerTuneServiceObject" class="com.injection.dependency.spring.practice.CallerTuneService"/>
+    <bean id="missedCallAlertServiceObject" class="com.injection.dependency.spring.practice.MissedCallAlertService"/>
+    <bean id="dataPlanServiceObject" class="com.injection.dependency.spring.practice.DataPlanService"/>
+
+    <bean id="airtel" class="com.injection.dependency.spring.practice.Airtel">
+        <property name="service" ref="missedCallAlertServiceObject"/>
+    </bean>
+
+</beans>
