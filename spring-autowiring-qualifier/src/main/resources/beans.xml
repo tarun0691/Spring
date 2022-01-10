@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--Enable Annotations-->
+    <context:annotation-config />
+
+    <bean id="humanHeart" class = "com.annotation.autowiring.spring.Heart">
+        <property name="nameOfSpecies" value="Human"/>
+    </bean>
+    <bean id="animalHeart" class = "com.annotation.autowiring.spring.Heart">
+        <property name="nameOfSpecies" value="Animal"/>
+    </bean>
+
+    <bean id="human" class = "com.annotation.autowiring.spring.Human">
+        <!--don't need to configure property explicitly, instead we can use @Autowired-->
+        <!--<property name="heart" ref="heartObject"/>-->
+    </bean>
+</beans>
