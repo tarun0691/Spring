@@ -6,12 +6,12 @@
 
     <groupId>org.example</groupId>
     <artifactId>spring-autowiring-qualifier</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.8</version>
+            <version>5.3.14</version>
         </dependency>
     </dependencies>
 
